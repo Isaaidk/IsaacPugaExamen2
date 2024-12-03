@@ -5,8 +5,33 @@
              Title="IPTelefonopage">
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to .NET MAUI!"
+            Text="Ingrese el numero telefonico"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+
+        <Editor x:Name="TelefonoEdit"
+                 Placeholder="Ingresa tu numero telefonco"
+                  Text="{Binding Telefono}"
+        
+
+                 HeightRequest="100" />
+        
+        
+        <Label Text="Ingresa tu Nombre " >
+            
+            
+            
+        </Label>
+        <Editor x:Name="Nombre"
+          Placeholder="Ingresa tu numero telefonco"
+           Text="{Binding Nombre}"
+                
+
+          HeightRequest="100" />
+
+        <Button Text="Save"
+        Clicked="SaveButton_Clicked" />
+        
+        
     </VerticalStackLayout>
 </ContentPage>
