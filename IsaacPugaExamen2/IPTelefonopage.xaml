@@ -22,7 +22,7 @@
             
             
         </Label>
-        <Editor x:Name="Nombre"
+        <Editor x:Name="NombreEdit"
           Placeholder="Ingresa tu numero telefonco"
            Text="{Binding Nombre}"
                 
