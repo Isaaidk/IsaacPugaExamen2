@@ -1,4 +1,5 @@
 namespace IsaacPugaExamen2;
+
 [QueryProperty(nameof(ItemId), nameof(ItemId))]
 
 public partial class IPTelefonopage : ContentPage
@@ -19,7 +20,7 @@ public partial class IPTelefonopage : ContentPage
     {
         if (BindingContext is IsaacPugaExamen2.Resources.Models.IPTelefono telefono)
             File.WriteAllText(telefono.Telefono, TelefonoEdit.Text);
-            File.WriteAllText(telefono.Nombre, NombreEdit.Text);
+
 
 
         await Shell.Current.GoToAsync("..");
