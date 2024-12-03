@@ -11,15 +11,15 @@
     <TabBar>
     
         <ShellContent
-            Title="Isaac Puga"
+            Title="Isaac Puga TelefonoP"
             ContentTemplate="{DataTemplate local:IPTelefonopage}"
-            Icon="{OnPlatform 'wsp.png', iOS='wsp.png', MacCatalyst='wsp.png'}" />
+            Icon="{OnPlatform 'dotnet_bot.png', iOS='dotnet_bot.png', MacCatalyst='dotnet_bot.png'}" />
 
 
         <ShellContent
-            Title="Isaac Puga"
+            Title="Isaac Puga GridP"
             ContentTemplate="{DataTemplate local:IPGridpage}"
-            Icon="{OnPlatform 'wsp.png', iOS='wsp.png', MacCatalyst='wsp.png'}" />
+            Icon="{OnPlatform 'dotnet_bot.png', iOS='dotnet_bot.png', MacCatalyst='dotnet_bot.png'}" />
 
 
       

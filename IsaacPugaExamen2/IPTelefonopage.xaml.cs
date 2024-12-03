@@ -1,5 +1,4 @@
 namespace IsaacPugaExamen2;
-[QueryProperty(nameof(ItemId), nameof(ItemId))]
 
 public partial class IPTelefonopage : ContentPage
 {
@@ -10,7 +9,6 @@ public partial class IPTelefonopage : ContentPage
         string appDataPath = FileSystem.AppDataDirectory;
         string randomFileName = $"{Path.GetRandomFileName()}.notes.txt";
 
-        LoadNote(Path.Combine(appDataPath, randomFileName));
 
 
 
@@ -26,21 +24,5 @@ public partial class IPTelefonopage : ContentPage
 
 
 
-    private void LoadNote(string fileName)
-    {
-        IsaacPugaExamen2.Resources.Models.IPTelefono noteModel = new IsaacPugaExamen2.Resources.Models.IPTelefono();
-        noteModel.Filename = fileName;
-
-        if (File.Exists(fileName))
-        {
-            noteModel.Date = File.GetCreationTime(fileName);
-            noteModel.Text = File.ReadAllText(fileName);
-        }
-
-        BindingContext = noteModel;
-    }
-    public string ItemId
-    {
-        set { LoadNote(value); }
-    }
+   
 }
