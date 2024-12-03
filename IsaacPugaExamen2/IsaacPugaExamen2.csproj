@@ -66,4 +66,16 @@
 	  <Folder Include="Resources\Views\" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <MauiXaml Update="IPGridpage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="IPTelefonopage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="IPtelefonossave.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 </Project>

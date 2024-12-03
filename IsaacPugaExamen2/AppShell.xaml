@@ -7,9 +7,24 @@
     Shell.FlyoutBehavior="Disabled"
     Title="IsaacPugaExamen2">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+
+    <TabBar>
+    
+        <ShellContent
+            Title="Isaac Puga"
+            ContentTemplate="{DataTemplate local:IPTelefonopage}"
+            Icon="{OnPlatform 'wsp.png', iOS='wsp.png', MacCatalyst='wsp.png'}" />
+
+
+        <ShellContent
+            Title="Isaac Puga"
+            ContentTemplate="{DataTemplate local:IPGridpage}"
+            Icon="{OnPlatform 'wsp.png', iOS='wsp.png', MacCatalyst='wsp.png'}" />
+
+
+      
+
+    </TabBar>
+
 
 </Shell>
