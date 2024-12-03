@@ -4,6 +4,6 @@ public partial class IPtelefonossave : ContentPage
 {
 	public IPtelefonossave()
 	{
-        BindingContext = new Models.AllNotes();
+        BindingContext = new IsaacPugaExamen2.Resources.Models.Telefonos();
     }
 }
