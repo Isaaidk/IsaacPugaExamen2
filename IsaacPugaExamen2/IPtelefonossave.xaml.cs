@@ -4,6 +4,6 @@ public partial class IPtelefonossave : ContentPage
 {
 	public IPtelefonossave()
 	{
-		InitializeComponent();
-	}
+        BindingContext = new Models.AllNotes();
+    }
 }
